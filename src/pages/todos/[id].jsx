@@ -148,6 +148,14 @@ export default function TodoDetail(props) {
     triggerDelete({ todoItemId: isShowDelete.idDelete, todoId: id });
   };
 
+  const handleChangeChecked = (itemId, itemChecked, itemName) => {
+    triggerUpdateItem({
+      todoId: id,
+      todoItemId: itemId,
+      param: { name: itemName, checked: !itemChecked },
+    });
+  };
+
   const renderTooltip = (props) => <Tooltip {...props}>{props.title}</Tooltip>;
   return (
     <>
@@ -182,7 +190,12 @@ export default function TodoDetail(props) {
               return (
                 <tr key={index}>
                   <td>
-                    <Form.Check checked={item.checked} />
+                    <Form.Check
+                      checked={item.checked}
+                      onClick={() =>
+                        handleChangeChecked(item.id, item.checked, item.name)
+                      }
+                    />
                   </td>
                   <td
                     style={{
