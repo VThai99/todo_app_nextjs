@@ -1,0 +1,23 @@
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginationStyle {
+  justify-content: end;
+}
+.addNewSection {
+  display: flex;
+  justify-content: flex-end;
+}
+.actionStyle{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+.checkStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

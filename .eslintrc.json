@@ -1,0 +1,84 @@
+{
+  "root": true,
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "airbnb-base",
+    "airbnb/rules/react",
+    "airbnb/hooks"
+  ],
+  "rules": {
+    "semi": [
+      0,
+      "never"
+    ],
+    "comma-dangle": [
+      0,
+      "never"
+    ],
+    "no-unused-vars": 0,
+    "prefer-arrow-callback": 0,
+    "import/order": 0,
+    "quotes": "off",
+    "arrow-body-style": "off",
+    "no-multiple-empty-lines": 0,
+    "react/jsx-curly-brace-presence": 0,
+    "import/newline-after-import": 0,
+    "operator-linebreak": 0,
+    "implicit-arrow-linebreak": 0,
+    "react/jsx-curly-newline": 0,
+    "eqeqeq": 0,
+    "prefer-destructuring": 0,
+    "object-curly-spacing": 0,
+    "max-len": 0,
+    "radix": 0,
+    "global-require": 0,
+    "prefer-object-spread": 0,
+    "object-curly-newline": 0,
+    "no-await-in-loop": 0,
+    "no-param-reassign": [
+      2,
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "draft", "req", "res"
+        ]
+      }
+    ],
+    "function-paren-newline": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-closing-tag-location": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-array-index-key": 0,
+    "react/prop-types": 0,
+    "react/jsx-no-constructed-context-values": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/function-component-definition": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src"
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".css",
+          ".scss",
+          ".json"
+        ]
+      }
+    }
+  }
+}
